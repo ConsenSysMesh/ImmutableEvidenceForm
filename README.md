@@ -39,16 +39,20 @@ NODE_MODULE_VERSION 57. This version of Node.js requires
 NODE_MODULE_VERSION 59
 ```
 
-then run ```npm rebuild scrypt```
+then run 
+```>npm rebuild scrypt```
 
 If you see the following parser error...
 ```
-Error parsing /Users/sfronsdahl/gitPull/ImmutableEvidence/contracts/ComplexStorage.sol: ParsedContract.sol:13:14: ParserError: Expected identifier, got 'LParen'
+Error parsing /Users/sfronsdahl/gitPull/ImmutableEvidence/contracts/ComplexStorage.sol: 
+ParsedContract.sol:13:14: ParserError: Expected identifier, got 'LParen'
   constructor() {
              ^
 Compilation failed. See above.
 ```
-...then run ```npm upgrade -g truffle"``` (Truffle v4..1.8 (core: 4.1.9) is working at time of writing this tutorial)
+...then run 
+```>npm upgrade -g truffle``` 
+(Truffle v4..1.8 (core: 4.1.9) is working at time of writing this tutorial)
 
 
 ### Login to MetaMask and Start Web App
