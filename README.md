@@ -9,8 +9,10 @@ Note that this guide has a preference toward MAC OS, although you should be able
 
 ## Getting Started
 
-Clone the Repo from Git
-Run ```npm install ```
+Clone the Repo from Git and run the following to install npm dependencies 
+```
+npm install
+ ```
 
 ## Starting (Your Own Version) on TestRPC (Local Testnet)
 
