@@ -31,20 +31,19 @@ Open your terminal and 'cd' (change directory) to the appropiate folder, where y
 > truffle migrate 
 ```
 
-If you see the following node.js error...
+*If you see the following node.js error...*
 ```
 Error: The module '/ImmutableEvidence/node_modules/scrypt/build/Release/scrypt.node'
 was compiled against a different Node.js version using
 NODE_MODULE_VERSION 57. This version of Node.js requires
 NODE_MODULE_VERSION 59
 ```
-
-then run 
+*then run*
 ```
 >npm rebuild scrypt
 ```
 
-If you see the following parser error...
+*If you see the following parser error...*
 ```
 Error parsing /Users/sfronsdahl/gitPull/ImmutableEvidence/contracts/ComplexStorage.sol: 
 ParsedContract.sol:13:14: ParserError: Expected identifier, got 'LParen'
@@ -52,11 +51,11 @@ ParsedContract.sol:13:14: ParserError: Expected identifier, got 'LParen'
              ^
 Compilation failed. See above.
 ```
-...then run 
+*...then run*
 ```
 >npm upgrade -g truffle
 ``` 
-(Truffle v4..1.8 (core: 4.1.9) is working at time of writing this tutorial)
+*(Truffle v4..1.8 (core: 4.1.9) is working at time of writing this tutorial)*
 
 
 ### Login to MetaMask and Start Web App
