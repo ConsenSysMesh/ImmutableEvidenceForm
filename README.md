@@ -10,8 +10,11 @@ Note that this guide has a preference toward MAC OS, although you should be able
 ## Getting Started
 
 Clone the Repo from Git
+Run ```npm install ```
 
 ## Starting (Your Own Version) on TestRPC (Local Testnet)
+
+### Download and Start Ganache
 
 For those with MacOS, download Ganache here: http://truffleframework.com/ganache/. This will visualize your local blockchain (so that you can see all transactions, associated 'costs' and otherwise). Ganache is the new way to interact with TestRPC without having 10 terminals open. For those of you with Windows or other OS, you should be able to find your download(s) here: https://github.com/trufflesuite/ganache/releases
 
@@ -20,11 +23,35 @@ Go ahead and start Ganache by opening the application on your computer. You shou
 ![alt text](http://truffleframework.com/images/suite/ganache/ganache-window.png)
 
 
+### Deploy Smart Contracts With Truffle
+
 Open your terminal and 'cd' (change directory) to the appropiate folder, where you have downloaded and unzipped the repo. Then compile and migrate your smart contracts like so (make sure that you have installed all dependencies related to truffle here: http://truffleframework.com/docs/getting_started/installation): 
 ```
 > truffle compile
 > truffle migrate 
 ```
+
+If you see the following node.js error...
+```
+Error: The module '/ImmutableEvidence/node_modules/scrypt/build/Release/scrypt.node'
+was compiled against a different Node.js version using
+NODE_MODULE_VERSION 57. This version of Node.js requires
+NODE_MODULE_VERSION 59
+```
+
+then run ```npm rebuild scrypt```
+
+If you see the following parser error...
+```
+Error parsing /Users/sfronsdahl/gitPull/ImmutableEvidence/contracts/ComplexStorage.sol: ParsedContract.sol:13:14: ParserError: Expected identifier, got 'LParen'
+  constructor() {
+             ^
+Compilation failed. See above.
+```
+...then run ```npm upgrade -g truffle"``` (Truffle v4..1.8 (core: 4.1.9) is working at time of writing this tutorial)
+
+
+### Login to MetaMask and Start Web App
 
 IMPORTANT! - Make sure, before you deploy the application locally via 'npm start' in your terminal, that your MetaMask is on the 'Localhost 8545' network. Here are the steps to ensure that it is: 
 
@@ -45,6 +72,8 @@ IMPORTANT! - Make sure, before you deploy the application locally via 'npm start
 ```
 
 7. A web page should open up and show the interface of your DApp (Decentralized Application). For this DApp, you should see a form, test it out and enter the details and press the submit button. You should get a prompt from MetaMask to 'sign' the transaction (authorize it). You're good to go!
+
+
 
 ## Starting (Your Own Version) on Rinkeby (Actual Testnet)
 
