@@ -40,7 +40,9 @@ NODE_MODULE_VERSION 59
 ```
 
 then run 
-```>npm rebuild scrypt```
+```
+>npm rebuild scrypt
+```
 
 If you see the following parser error...
 ```
@@ -51,7 +53,9 @@ ParsedContract.sol:13:14: ParserError: Expected identifier, got 'LParen'
 Compilation failed. See above.
 ```
 ...then run 
-```>npm upgrade -g truffle``` 
+```
+>npm upgrade -g truffle
+``` 
 (Truffle v4..1.8 (core: 4.1.9) is working at time of writing this tutorial)
 
 
