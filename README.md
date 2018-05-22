@@ -71,7 +71,11 @@ IMPORTANT! - Make sure, before you deploy the application locally via 'npm start
 > npm start
 ```
 
-7. A web page should open up and show the interface of your DApp (Decentralized Application). For this DApp, you should see a form, test it out and enter the details and press the submit button. You should get a prompt from MetaMask to 'sign' the transaction (authorize it). You're good to go!
+7. A web page should open up and show the interface of your DApp (Decentralized Application). For this DApp, you should see a form, test it out and enter the details and press the submit button. You should get a prompt from MetaMask to 'sign' the transaction (authorize it). 
+
+If the MetaMask prompt does not appear, click on your MetaMask extension.  The transaction can then be submitted.
+
+You're good to go!
 
 
 
