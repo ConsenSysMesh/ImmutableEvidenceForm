@@ -45,7 +45,7 @@ NODE_MODULE_VERSION 59
 
 *If you see the following parser error...*
 ```
-Error parsing /Users/sfronsdahl/gitPull/ImmutableEvidence/contracts/ComplexStorage.sol: 
+Error parsing /ImmutableEvidence/contracts/ComplexStorage.sol: 
 ParsedContract.sol:13:14: ParserError: Expected identifier, got 'LParen'
   constructor() {
              ^
