@@ -59,7 +59,7 @@ Compilation failed. See above.
 ``` 
 *(Truffle v4..1.8 (core: 4.1.9) is working at time of writing this tutorial)*
 
-*If you see the following connection error during migration*
+*If you see the following connection error during migration...*
 ```
 Could not connect to your Ethereum client. Please check that your Ethereum client:
     - is running
@@ -67,7 +67,7 @@ Could not connect to your Ethereum client. Please check that your Ethereum clien
     - is accessible over the network
     - is properly configured in your Truffle configuration file (truffle.js)
 ```
-*Go to Ganache settings in top right of Ganache User Interface and note the port number (default: 8545)
+*...Go to Ganache settings in top right of Ganache User Interface and note the port number (default: 8545)
 Then in the terminal, open truffle.js and ensure development: { port: 8545 } is the same*
   
 
